@@ -1,0 +1,412 @@
+html, body {
+margin: 0;
+padding: 0;
+max-width: 100%;
+overflow-x: hidden;
+}
+
+body > section,
+body > footer {
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+.clear { clear: both; }
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+/*----- HEADER ELEMENTS-----*/
+
+
+#header {
+width: 100%;
+height: 50px;
+background-color: #FFFFFF;
+position: fixed;
+z-index: 1;
+padding-right: 10px;
+display: block;
+float: left;
+clear: both;
+}
+
+#browseButton {
+width: 50px;
+height: 50px;
+background-color: #10938C;
+display: block;
+float: left;
+}
+
+#browseButton img {
+  border: none;
+  display: block;
+  margin-top: 22px;
+  margin-left: 16px;
+}
+
+#logo {
+display: block;
+padding-top: 5px;
+width: 212px;
+float: left;
+}
+
+/*----- NAV BAR -----*/
+
+#nav {
+  margin-top: 8px;
+  margin-right: 27px;
+  float: right;
+}
+
+#search {
+display: block;
+padding-top: 12px;
+width: 315px;
+float: left;
+}
+
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+}
+
+#nav li{
+float: left;
+padding-left: 15px;
+color: #ffffff;
+font-size: 16px;
+text-decoration: none;
+font-family: 'Open Sans Condensed';
+font-weight: bold;
+}
+
+#nav li a { opacity:1; }
+
+#nav li a.active { color: #fff; opacity:1; }
+
+#nav li a:hover { color: #fff; opacity:1;  }
+
+/*----- HAMBURGER MENU...MMM BURGER HIDE THIS ON LARGE DISPLAYS -----*/
+
+.toggle-nav {
+  display:none;
+}
+
+#header2 {
+width: 100%;
+height: 5px;
+background-color: #7ED321;
+position: fixed;
+z-index: 1;
+display: block;
+float: left;
+clear: both;
+margin-top: 50px;
+}
+
+/*----- PANELS-----*/
+
+
+#openingpanel1{
+background:url('../img/panel1.png') 100% 0 no-repeat fixed;
+color: #ffffff;
+height: 550px;
+width: 100%;
+float: left;
+}
+
+.opening {
+ font-family: 'Gibson', serif;
+ font-weight: 500;
+ font-size: 36px;
+ display: block;
+ position: relative;
+ text-align: center;
+ margin: 250px auto;
+ bottom: -50px;
+ background-color: #69459B;
+ padding: 12px 0 15px 0;
+}
+
+
+.opening2 {
+ font-weight: 200;
+ font-size: 30px;
+ padding: 0 10px;
+}
+
+#openingpanel2{
+width: 100%;
+background-color: #ffffff;
+float: left;
+display: block;
+}
+
+#openingpanel3{
+background-color: #15bdb3;
+height: 500px;
+display: block;
+float: left;
+width: 100%;
+}
+
+#openingpanel4{
+background-color: #69459b;
+height: 500px;
+display: block;
+float: left;
+width: 100%;
+}
+
+/*----- TILE AREA-----*/
+
+.container {
+margin: 0 auto;
+width: 1155px;
+}
+
+.tileContainer {
+float: left;
+}
+
+.tileHeader {
+font-family: Gibson;
+font-size: 48px;
+font-weight: 600;
+color: #10938c;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+#tile {
+background-image: url("../img/tile.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile2 {
+background-image: url("../img/tile2.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile3 {
+background-image: url("../img/tile3.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile4 {
+background-image: url("../img/tile4.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile5 {
+background-image: url("../img/tile5.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile6 {
+background-image: url("../img/tile6.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile7 {
+background-image: url("../img/tile7.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile8 {
+background-image: url("../img/tile8.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile9 {
+background-image: url("../img/tile9.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+#tile10 {
+background-image: url("../img/tile10.png");
+float: left;
+margin-bottom: 15px;
+margin-right: 14px;
+}
+
+/*= MEDIA QUERIES FOR TILE RESET --*/
+
+@media screen and (max-width: 1366px) {
+.container {
+width: 1155px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.container {
+width: 923px;
+}
+
+#openingpanel1{
+background:url('../img/panel1-1024.png') 100% 0 no-repeat fixed;
+color: #ffffff;
+height: 550px;
+width: 100%;
+float: left;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.container {
+width: 694px;
+}
+
+#openingpanel1{
+background:url('../img/panel1-768.png') 100% 0 no-repeat fixed;
+color: #ffffff;
+height: 550px;
+width: 100%;
+float: left;
+}
+
+}
+
+@media screen and (max-width: 414px) {
+.container {
+width: 220px;
+}
+
+#openingpanel1{
+background:url('../img/panel1-414.png') 100% 0 no-repeat fixed;
+color: #ffffff;
+height: 550px;
+width: 100%;
+float: left;
+}
+
+}
+
+/*= MEDIA QUERIES FOR NAV --*/
+
+@media screen and (min-width: 800px) {
+
+.menu {
+float: right;
+position:relative;
+margin-top: 15px;
+margin-right: 20px;
+font-family:"Gibson"; font-weight: normal;
+font-size: 18px; text-decoration: none;
+color: #000000;
+}
+
+.menu ul {
+list-style: none;
+display: block;
+margin: 0 auto;
+}
+
+.menu li {
+float: left;
+padding-left: 30px;
+}
+
+.menu a {
+font-family:"Gibson"; font-weight: normal;
+text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+color: #000000;
+transition:color linear 0.15s;
+text-decoration: none;
+font-size: 18px;
+opacity:0.6;
+}
+
+.menu a:hover, .menu .current-item a {
+text-decoration:none;
+opacity:0.8;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+.menu {
+display:inline-block;
+float: right;
+position:relative;
+font-family:"Open Sans Condensed"; font-weight: bold;
+font-size: 30px;
+color: #ffffff;
+}
+
+.menu ul.active {
+  display:none;
+}
+
+.menu ul {
+position:absolute;
+width:auto;
+height:230px;
+top:133%;
+left:-150px;
+background:#000000;
+text-align:center;
+padding: 30px 30px;
+}
+
+.menu li {
+width:100%;
+float:none;
+display:block;
+padding: 10px 0px;
+}
+
+.menu a {
+display:block;
+font-size: 30px;
+opacity:0.6;
+}
+
+.toggle-nav {
+position:relative;
+float: right;
+height: 34px;
+width: 34px;
+display: inline-block;
+color: #ffffff;
+padding-right: 15px;
+padding-top: 8px;
+}
+
+.toggle-nav:hover, .toggle-nav.active {
+ text-decoration: none;
+ color: #ffffff;
+}
+
+#nav {display:none;}
+#search {display:none;}
